@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: none;
+}
+
+header nav a {
+    color: #000;
+    margin-right: 20px;
+}
+
+/* ?INTRODUCTION START */
+.introduction .intro-left-side h1 span {
+    color: #FF8A56;
+}
+
+.introduction .intro-left-side h1 {
+    font-weight: 700 ;
+    margin-bottom: 20px;
+}
+.introduction .intro-left-side p{
+    color: #666;
+}
+.introduction .intro-left-side .book{
+    background:#222 ;
+   width: 151px;
+   height: 58px;
+    color: #fff;
+   
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.introduction .intro-left-side .book-a-call{
+    margin-top: 40px;
+}
+
+
+@media(max-width:575px) {
+    .parentdiv {
+        max-width: 100%;
+    }
+}
+
+@media(min-width:576px) {
+    .parentdiv {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:768px) {
+    header nav {
+        display: block;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .parentdiv {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:992px) {
+    .parentdiv {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .introduction {
+        display: flex;
+
+    }
+
+    .introduction .intro-left-side h1 {
+        font-size: 72px;
+    }
+
+    .introduction .intro-left-side {
+        padding: 92px 0;
+    }
+
+    .introduction .intro-right-side {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width:1200px) {
+    .parentdiv {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
