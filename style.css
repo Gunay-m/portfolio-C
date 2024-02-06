@@ -11,7 +11,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 header nav {
@@ -31,9 +31,12 @@ header nav a {
 .introduction .intro-left-side h1 {
     font-weight: 700 ;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
 }
 .introduction .intro-left-side p{
     color: #666;
+    font-weight: 400;
 }
 .introduction .intro-left-side .book{
     background:#222 ;
@@ -49,6 +52,31 @@ header nav a {
 .introduction .intro-left-side .book-a-call{
     margin-top: 40px;
 }
+.introduction .intro-left-side .download{
+    color: #000;
+   
+}
+.introduction .intro-right-side img{
+    width: 300px;
+    margin: 0 auto;
+}
+.emekdaslar h6{
+    text-align: center ;
+    font-size: 18px;
+    font-weight: 100;
+}
+.emekdaslar{
+    padding: 100px 0;
+}
+.shirketler img:nth-child(1),
+.shirketler img:nth-child(2){
+    display: none;
+}
+
+
+
+
+
 
 
 @media(max-width:575px) {
@@ -77,6 +105,32 @@ header nav a {
         max-width: 720px;
         margin: 0 auto;
     }
+    .introduction {
+        display: flex;
+
+    }
+    .introduction .intro-left-side{
+        padding-top: 70px;
+    }
+    .introduction .intro-left-side h1{
+        font-size: 34px;
+        text-align: left;
+    }
+    
+    .intro-right-side{
+        margin-left: 20px;
+        padding-top: 40px;
+    }
+    .introduction .intro-right-side img {
+        width: 400px;
+    }
+    .shirketler{
+        display: flex;
+        justify-content: center;
+    }
+    .shirketler img{
+        margin-right: 80px;
+    }
 }
 
 @media(min-width:992px) {
@@ -84,11 +138,8 @@ header nav a {
         max-width: 960px;
         margin: 0 auto;
     }
-
-    .introduction {
-        display: flex;
-
-    }
+    
+   
 
     .introduction .intro-left-side h1 {
         font-size: 72px;
@@ -100,7 +151,10 @@ header nav a {
 
     .introduction .intro-right-side {
         padding-top: 70px;
+       
     }
+    /* ! PARTNYORLAR */
+
 }
 
 @media (min-width:1200px) {
