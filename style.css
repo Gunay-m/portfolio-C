@@ -29,48 +29,98 @@ header nav a {
 }
 
 .introduction .intro-left-side h1 {
-    font-weight: 700 ;
+    font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
     font-size: 35px;
 }
-.introduction .intro-left-side p{
+
+.introduction .intro-left-side p {
     color: #666;
     font-weight: 400;
+    text-align: center;
 }
-.introduction .intro-left-side .book{
-    background:#222 ;
-   width: 151px;
-   height: 58px;
+
+.introduction .intro-left-side .book {
+    background: #222;
+    width: 151px;
+    height: 58px;
     color: #fff;
-   
+
     display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
 }
-.introduction .intro-left-side .book-a-call{
+
+.introduction .intro-left-side .book-a-call {
     margin-top: 40px;
+    text-align: center;
 }
-.introduction .intro-left-side .download{
+
+.introduction .intro-left-side .download {
     color: #000;
-   
+
 }
-.introduction .intro-right-side img{
+
+.introduction .intro-right-side img {
     width: 300px;
     margin: 0 auto;
+    margin-left: 40px;
 }
-.emekdaslar h6{
-    text-align: center ;
+
+.emekdaslar h6 {
+    text-align: center;
     font-size: 18px;
     font-weight: 100;
 }
-.emekdaslar{
+
+.emekdaslar {
     padding: 100px 0;
 }
+
 .shirketler img:nth-child(1),
-.shirketler img:nth-child(2){
+.shirketler img:nth-child(2) {
     display: none;
+}
+
+.shirketler {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(306px,1fr));
+    gap: 40px;
+}
+.services h6{
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF5E69;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.services h1{
+    text-align: center;
+    font-size: 54px;
+}
+.services ul{
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 0px;
+}
+.services-cards .card{
+    box-shadow: 5px 15px 10px rgb(0, 0, 0, .2);
+    padding: 30px;
+    border-radius:5px ;
+    transition: all 0.2s ease-in;
+
+}
+.services-cards .card:hover{
+    -webkit-box-shadow: 11px 11px 4px -6px rgba(0,0,0,0.4);
+-moz-box-shadow: 11px 11px 4px -6px rgba(0,0,0,0.4);
+box-shadow: 11px 11px 4px -6px rgba(0,0,0,0.4);
 }
 
 
@@ -105,31 +155,46 @@ header nav a {
         max-width: 720px;
         margin: 0 auto;
     }
+
     .introduction {
         display: flex;
 
     }
-    .introduction .intro-left-side{
+
+    .introduction .intro-left-side {
         padding-top: 70px;
     }
-    .introduction .intro-left-side h1{
+
+    .introduction .intro-left-side h1 {
         font-size: 34px;
         text-align: left;
     }
-    
-    .intro-right-side{
+
+    .intro-right-side {
         margin-left: 20px;
         padding-top: 40px;
     }
+
     .introduction .intro-right-side img {
         width: 400px;
     }
-    .shirketler{
+
+    .shirketler {
         display: flex;
         justify-content: center;
     }
-    .shirketler img{
+
+    .shirketler img {
         margin-right: 80px;
+        display: inline !important;
+    }
+
+    .introduction .intro-left-side p {
+        text-align: left;
+    }
+
+    .introduction .intro-left-side .book-a-call {
+        text-align: left;
     }
 }
 
@@ -138,8 +203,8 @@ header nav a {
         max-width: 960px;
         margin: 0 auto;
     }
-    
-   
+
+
 
     .introduction .intro-left-side h1 {
         font-size: 72px;
@@ -151,8 +216,9 @@ header nav a {
 
     .introduction .intro-right-side {
         padding-top: 70px;
-       
+
     }
+
     /* ! PARTNYORLAR */
 
 }
